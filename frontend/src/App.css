@@ -1,21 +1,33 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  background-color: #f0f2f5;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin-top: 4rem; /* Add margin to separate from navbar */
+  margin-left: 19rem; /* Add margin to separate from sidebar */
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+  width: 100px;
+  height: auto;
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+
+.logo.react {
+  animation: logo-spin infinite 20s linear;
 }
 
 @keyframes logo-spin {
@@ -27,16 +39,127 @@
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
 .card {
   padding: 2em;
+  margin: 2em;
+  text-align: center;
+  border-radius: 0.5em;
+  box-shadow: 0 0 1em 0 rgba(0, 0, 0, 0.1);
 }
 
 .read-the-docs {
   color: #888;
+}
+
+.app-container {
+  display: flex;
+}
+
+.sidebar {
+  width: 16rem;
+  background-color: #fff;
+  padding: 1rem;
+  height: 100vh; /* Ensure sidebar takes full height */
+  position: fixed; /* Fix sidebar position */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  padding-top: 4rem; /* Add padding to account for fixed navbar */
+}
+
+.sidebar a {
+  display: block;
+  padding: 1rem;
+  color: #333;
+  text-decoration: none;
+}
+
+.sidebar a:hover {
+  background-color: #f0f2f5;
+}
+
+.content-container {
+  margin-left: 260px; /* Offset content by sidebar width plus some gap */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: calc(91.5% - 15rem); /* Adjust width to account for sidebar */
+  padding: 1rem;
+  color: #333; /* Adjust text color if needed */
+  background-color: #fff; /* Ensure background color matches main content */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for separation */
+  position: fixed;
+  top: 0;
+  left: 20rem; /* Position to the right of the sidebar */
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Adjust text color if needed */
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  color: #333; /* Adjust text color if needed */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-search {
+  margin-left: auto;
+}
+
+.navbar-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.content {
+  flex: 1;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem; /* Add margin to account for fixed navbar */
+}
+
+.footer {
+  background-color: #fff;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
 }

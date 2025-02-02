@@ -1,0 +1,69 @@
+.sentiment-card {
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.sentiment-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.sentiment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.sentiment-item {
+  display: flex;
+  align-items: center;
+}
+
+.sentiment-label {
+  width: 100px;
+  font-size: 0.875rem;
+  color: #4a4a4a;
+}
+
+.sentiment-bar-bg {
+  flex: 1;
+  background-color: #e0e0e0;
+  border-radius: 0.5rem;
+  height: 1rem;
+  margin: 0 0.5rem;
+  position: relative;
+}
+
+.sentiment-bar {
+  height: 100%;
+  border-radius: 0.5rem;
+}
+
+.green-bg {
+  background-color: #38a169;
+}
+
+.light-green-bg {
+  background-color: #68d391;
+}
+
+.blue-bg {
+  background-color: #4299e1;
+}
+
+.light-red-bg {
+  background-color: #fc8181;
+}
+
+.red-bg {
+  background-color: #e53e3e;
+}
+
+.sentiment-percentage {
+  font-size: 0.875rem;
+  color: #4a4a4a;
+}

@@ -1,0 +1,60 @@
+.sidebar {
+  width: 16rem;
+  height: calc(90vh - 3rem); /* Decrease the height */
+  background-color: #f7fafc;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  position: fixed;
+  left: 1rem;
+  top: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  font-family: 'Roboto', sans-serif; /* Apply font */
+  font-size: 16px; /* Apply font size */
+}
+
+.sidebar-header {
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center; /* Center text */
+  width: 100%; /* Ensure header takes full width */
+}
+
+.sidebar-menu {
+  flex: 1;
+  padding: 1rem;
+  list-style: none;
+  margin: 0;
+  width: 100%; /* Ensure the menu takes full width */
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem; /* Increase padding */
+  border-radius: 0.25rem;
+  text-decoration: none; /* Remove underline */
+  color: inherit;
+  transition: background-color 0.2s, padding 0.3s; /* Smooth transition for background and padding */
+  text-align: left; /* Align text to the left */
+  margin-left: 1rem; /* Add gap from the left */
+  margin-right: 1rem; /* Add gap from the right */
+  font-size: 1.25rem; /* Increase text size */
+}
+
+.sidebar-link:hover {
+  background-color: #edf2f7;
+}
+
+.sidebar-icon {
+  margin-right: 0.75rem; /* Add space between icon and text */
+  font-size: 1.25rem; /* Match icon size with text size */
+}
+
+.sidebar-link.selected {
+  background-color: black;
+  color: white;
+}

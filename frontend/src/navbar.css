@@ -1,0 +1,50 @@
+.navbar {
+  padding: 1rem;
+  color: #333; /* Adjust text color if needed */
+  background-color: transparent; /* Make navbar transparent */
+  box-shadow: none; /* Remove box shadow */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Adjust text color if needed */
+  text-decoration: none;
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-item {
+  margin: 0;
+}
+
+.navbar-link {
+  color: #333; /* Adjust text color if needed */
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navbar-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
